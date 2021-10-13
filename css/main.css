@@ -1,0 +1,168 @@
+:root{
+    --azulps:#00439c;
+    --brancops: #ffffff;
+    --cinzaps: #cecece;
+    --pretops: #000000;
+
+}
+
+@font-face{
+    font-family: "zrnic-rg";
+    src: url(../font/zrnic-rg.ttf);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: var(--brancops);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+header .container{
+    background-color: var(--azulps);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    font-family: "zrnic-rg";
+    font-weight: normal;
+    font-size: 25px;
+    color: var(--brancops);
+    margin-right: 20px;
+
+}
+
+header img{
+    height: 70px;
+
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--brancops);
+    font-size: 20px;
+    margin-right: 20px;
+    transition: .2s ease all;
+
+}
+
+header nav a:hover{
+    color: var(--cinzaps);
+
+}
+
+main .banner{
+    display: flex;
+    background-image: url(../img/psbanner.jpeg);
+    background-color: var(--azulps);
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+
+}
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main .description{
+    display: flex;
+    width: 25%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--brancops);
+    font-size: 20px;
+
+}
+
+main .btn-sign{
+    padding: 8px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: var(--brancops);
+    color: var(--azulps);
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s ease all;
+
+}
+
+main .btn-sign i{
+    margin-right: 5px;
+
+}
+
+main .btn-sign:hover{
+    background-color: var(--cinzaps);
+    cursor: pointer;
+
+}
+
+.carrossel{
+    margin: 40px 20px 20px 20px;
+
+}
+
+.carrossel h2{
+    margin-bottom: 20px;
+    
+}
+
+.item h4{
+    margin-bottom: 5px;
+    font-weight: normal;
+
+}
+
+.box-game{
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+
+footer{
+    padding: 5px 20px 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 30px;
+    background-color: var(--azulps);
+    color: var(--cinzaps);
+    font-size: 10px;
+
+}
+ 
+@media screen and (max-width:700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    header .container nav{
+        margin-bottom: 20px;
+
+    }
+
+ }
